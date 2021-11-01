@@ -30,17 +30,33 @@ body{
 .cardwrap{
     height: 495px;
 }
-.card{
-    width: 370px;
-    height: 230px;
-    border-radius: 10px;
-    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
-}
 .card1{
     width: 370px;
     height: 230px;
     border-radius: 10px;
     box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card2{
+    width: 370px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card3{
+    width: 370px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.card4{
+    width: 370px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+    border-top: 5px solid hsl(212, 86%, 64%);
 }
 .redcards{
     display: grid;
@@ -52,12 +68,6 @@ body{
     left: 50%;
     transform: translateX(-50%);
     
-}
-div.card:nth-child(1){
-    border-top: 5px solid hsl(0, 78%, 62%);
-}
-div.card:nth-child(2){
-    border-top: 5px solid hsl(34, 97%, 64%);
 }
 .bluecards{
     display: grid;
@@ -71,21 +81,148 @@ div.card:nth-child(2){
     justify-items: center;
     top: 51%;
 }
-div.card1:nth-child(1){
-    border-top: 5px solid hsl(180, 62%, 55%);
+.title1, .title2, .title3, .title4{
+    position: absolute;
+    font-size: 26px;
+    color: hsl(234, 12%, 34%);
 }
-div.card1:nth-child(2){
-    border-top: 5px solid hsl(212, 86%, 64%);
+.title1{
+    top: 7%;
+    left: 10%;
 }
-.title{
-
+.title2{
+    top: 67%;
+    left: 10%;
 }
-.label{
-
+.title3{
+    top: 12%;
+    left: 10%;
 }
-.icon{
+.title4{
+    top: 12%;
+    left: 68%;
+}
+.label1, .label2, .label3, .label4{
+    position: absolute;
+    width: 290px;
+    color: hsl(229, 6%, 66%);
+}
+.label1{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    width: 290px;
+    font-size: 15px;
+}
+.label2{
+    position: absolute;
+    top: 78%;
+    left: 10%;
+}
+.label3{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.label4{
+    position: absolute;
+    top: 35%;
+    left: 68%;
+}
+.icon, .icon2, .icon3, .icon4{
     position: relative;
     top: 65%;
     left: 75%;
     height: 50px;
+}
+.white{
+    display: none;
+}
+
+@media screen and (max-width: 1300px){
+    body{
+        overflow-x: hidden;
+    }
+    .cardwrap{
+        display: grid;
+        justify-content: center;
+        width: 100vw;
+    }
+    .redcards{
+        display: grid;
+        position: relative;
+        width: 370px;
+        height: 507px;
+    }
+    .bluecards{
+        display: grid;
+        position: relative;
+        justify-content: center;
+        gap: 0em;
+        width: 370px;
+        grid-template-areas:
+        "c"
+        "d";
+    }
+    .card3{
+        grid-area: c;
+    }
+    .label4, .title4{
+        position: relative;
+        display: inline-block;
+    }
+    .title4{
+        left: 9%;   
+    }
+    .label4{
+        left: 9%;
+        top: 10%;
+    }
+    .card3{
+        margin-bottom: 2em;
+        margin-top: -5.2em;
+    }
+    .card4{
+        grid-area: d;
+    }
+    .title2, .label2{
+        position: relative;
+    }
+    .title2{
+        top: 10%;
+    }
+    .label2{
+        top: 18%;
+    }
+    .title3, .label3{
+        position: relative;
+    }
+    .label3{
+        top: 19%;
+    }
+    .icon2, .icon3{
+        top: 27%;
+    }
+    .icon4{
+        position: relative;
+        left: -4%;
+        height: 50px;
+        width: 50px;
+        top: 50%;
+    }
+    .white{
+        display: block;
+        height: 2em;
+        width: 100vw;
+        margin-top: 37em;
+    }
+    .par{
+        width: 370px;
+    }
+    .bold, .thin{
+        font-size: 30px;
+    }
+    .thin{
+        margin-top: -1em;
+    }
 }
