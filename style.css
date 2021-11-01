@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins;
+    background-color: hsl(0, 0%, 98%);
+}
+.text{
+    text-align: center;
+    margin: 5em 0 5em 0;
+}
+.thin{
+    font-weight: 200;
+    font-size: 37px;
+    color: hsl(234, 12%, 34%);
+}
+.bold{
+    font-weight: 600;
+    font-size: 37px;
+    margin-bottom: 0.6em;
+    color: hsl(234, 12%, 34%);
+}
+.par{
+    display: inline-block;
+    width: 550px;
+    color: hsl(229, 6%, 66%);
+}
+.cardwrap{
+    height: 495px;
+}
+.card{
+    width: 370px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+}
+.card1{
+    width: 370px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px hsla(229, 6%, 66%, 0.336);
+}
+.redcards{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 370px;
+    height: 460px;
+    gap: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+div.card:nth-child(1){
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+div.card:nth-child(2){
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.bluecards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1400px;
+    gap: 200px;
+    height: 230px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-items: center;
+    top: 51%;
+}
+div.card1:nth-child(1){
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+div.card1:nth-child(2){
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.title{
+
+}
+.label{
+
+}
+.icon{
+    position: relative;
+    top: 65%;
+    left: 75%;
+    height: 50px;
+}
